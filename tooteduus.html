@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tooted | Vints</title>
+    <link href="bootstrap/css/vints.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+    <script src="bootstrap/js/jquery-3.1.0.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="imgclick.js"></script>
+    <script>
+        $(document).ready(function() {
+            if (window.location.hash.length > 0) {
+                window.scrollTo(0, $(window.location.hash).offset().top);
+                window.scrollTo(0, $(window.location.hash).offset().top);
+            }
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+    <!-- HEAD NAV -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="vints.html">
+                    <img class="hidden-xs" id="suurlogo" alt="Portable Winch" src="pildid/PW-White.png" />
+                    <img class="visible-xs" id="vaikelogo" alt="Portable Winch" src="pildid/PW-White.png" />
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right" id="navi-ul">
+                    <li role="presentation" id="navi-li">
+                        <a href="vints.html">Pealeht</a>
+                    </li>
+                    <li role="presentation" class="active">
+                        <a href="tooteduus.html">Tooted</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="hinnad.html">Hinnad</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="galerii.html">Galerii</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lisainfo <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation">
+                                <a href="tehnilineinfo.html">Tehniline Info</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li role="presentation">
+                                <a href="kasutusjuh.html">Kasutusjuhendid</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li role="presentation">
+                                <a href="eelised.html">Vintsi Eelised</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li role="presentation">
+                                <a href="nouanded.html">Nõuanded</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- // HEAD NAV -->
+
+    <!-- SIDE NAV -->
+    <div class="container">
+        <div class="row hidden-sm hidden-xs">
+            <nav class="col-sm-3 navbar-right kylgnav fixed" id="nav">
+                <ul class="nav list-group affix">
+                    <li class="list-group-item">
+                        <a href="#vintsid">Vintsid</a>
+                        <ul class="nav submenu">
+                            <li class="list-group-item hide"><a href="#pcw5000">PCW-5000</a></li>
+                            <li class="list-group-item hide"><a href="#pcw3000">PCW-3000</a></li>
+                            <li class="list-group-item hide"><a href="#eder">Eder Powerwinch 1800</a></li>
+                            <li class="list-group-item hide"><a href="#pcw5000hs">PCW-5000-HS</a></li>
+                            <li class="list-group-item hide"><a href="#pch1000">PCH-1000</a></li>
+                            <li class="list-group-item hide"><a href="#pct1800-60">PCT-1800-60HZ-120v</a></li>
+                            <li class="list-group-item hide"><a href="#pct1800-50">PCT-1800-50H-230V</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#trummlid">Trummlid</a>
+                        <ul class="nav submenu">
+                            <li class="list-group-item hide"><a href="#85">85mm</a></li>
+                            <li class="list-group-item hide"><a href="#76">76mm</a></li>
+                            <li class="list-group-item hide"><a href="#57">57mm</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item"><a href="#köied">Köied</a></li>
+                    <li class="list-group-item"><a href="#kotid">Köiekotid</a></li>
+                    <li class="list-group-item">
+                        <a href="#vintsikinnitused">Vintsi kinnitused</a>
+                        <ul class="nav submenu">
+                            <li class="list-group-item hide"><a href="#kinnitusrihmad">Kinnitusrihmad</a></li>
+                            <li class="list-group-item hide"><a href="#haakekonks">Kinnitusplaat haakekonksule</a></li>
+                            <li class="list-group-item hide"><a href="#plaatpuudele">Kinnitusplaat puudele/postidele</a></li>
+                            <li class="list-group-item hide"><a href="#vertikaalnetugi">Vertikaalse tõmbe tugi</a></li>
+                            <li class="list-group-item hide"><a href="#haakekonksukinnitus">Haakekonksu kinnitussüsteem</a></li>
+                            <li class="list-group-item hide"><a href="#pca1266adapter">PCA-1266 Adapter</a></li>
+                            <li class="list-group-item hide"><a href="#tugiplaadikinnitus">Tugiplaadi kinnitus</a></li>
+                            <li class="list-group-item hide"><a href="#tugiplaat">Vintsi tugiplaat</a></li>
+                            <li class="list-group-item hide"><a href="#kinnituspuudele">Kinnitus puudele/postidele</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#plokid">Plokid</a>
+                        <ul class="nav submenu">
+                            <li class="list-group-item hide"><a href="#tagasimono">Tagasijooksulukustiga monoplokk</a></li>
+                            <li class="list-group-item hide"><a href="#tagasitopelt">Tagasijooksulukustiga topeltplokk</a></li>
+                            <li class="list-group-item hide"><a href="#alumiiniumistmono">Alumiiniumist monoplokk</a></li>
+                            <li class="list-group-item hide"><a href="#topelt100">Topeltplokk 100mm</a></li>
+                            <li class="list-group-item hide"><a href="#mono100">Monoplokk 100mm</a></li>
+                            <li class="list-group-item hide"><a href="#mono76">Monoplokk 76mm</a></li>
+                            <li class="list-group-item hide"><a href="#nurgaplokk">Avatud nurgaplokk</a></li>
+                            <li class="list-group-item hide"><a href="#hülss">Hülss PCA-1291</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#karabiinid">Karabiinid</a>
+                        <ul class="nav submenu">
+                            <li class="list-group-item hide"><a href="#2550">Ovaalne teraskarabiin 2550kg</a></li>
+                            <li class="list-group-item hide"><a href="#5095">Ovaalne teraskarabiin 5095kg</a></li>
+                            <li class="list-group-item hide"><a href="#7135">Ovaalne teraskarabiin 7135kg</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#konksud">Konksud</a>
+                        <ul class="nav submenu">
+                            <li class="list-group-item hide"><a href="#lukustiga3">Lukustiga konks + 3 lüli</a></li>
+                            <li class="list-group-item hide"><a href="#lukustiga">Lukustiga konks</a></li>
+                            <li class="list-group-item hide"><a href="#ckonks">C-Konks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="push" class=""></div>
+    </div>
+    <!-- // SIDE NAV -->
+
+    <!-- VINTSID -->
+    <h1 class="text-center" style="padding-top: 20px;" id="vintsid">VINTSID</h1>
+    <div class="container">
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="pcw5000">
+                    <h2>PCW-5000</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image">
+                            <img alt="PCW-5000" class="tootepilt img-responsive" src="pildid/pcw-5k.jpg" />
+                            <img alt="PCW-5000" class="tootepilt img-responsive" src="pildid/pcw5000-2.jpg" />
+                            <img alt="PCW-5000" class="tootepilt img-responsive" src="pildid/pcw5000-3.jpg" />
+                            <img alt="PCW-5000" class="tootepilt img-responsive" src="pildid/pcw5000-4.jpg" />
+                            <img alt="PCW-5000" class="tootepilt img-responsive" src="pildid/pcw5000-5.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images">
+                                <img alt="PCW-5000" class="testing img-responsive" src="pildid/pcw-5k.jpg" />
+                                <img alt="PCW-5000" class="testing img-responsive" src="pildid/pcw5000-2.jpg" />
+                                <img alt="PCW-5000" class="testing img-responsive" src="pildid/pcw5000-3.jpg" />
+                                <img alt="PCW-5000" class="testing img-responsive" src="pildid/pcw5000-4.jpg" />
+                                <img alt="PCW-5000" class="testing img-responsive" src="pildid/pcw5000-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // PCW-5000 -->
+        <hr />
+        <!-- PCW-3000 -->
+        <div class="row" id="pcw3000">
+            <div class="centerBlock">
+                <div class="pealkiri">
+                    <h2>PCW-3000</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12" id="big-image2">
+                                <img alt="PCW-3000" class="tootepilt img-responsive img-responsive" src="pildid/pcw-3k.jpg" />
+                                <img alt="PCW-3000" class="tootepilt img-responsive" src="pildid/pcw3000-2.jpg" />
+                                <img alt="PCW-3000" class="tootepilt img-responsive" src="pildid/pcw3000-3.jpg" />
+                                <img alt="PCW-3000" class="tootepilt img-responsive" src="pildid/pcw3000-4.jpg" />
+                                <img alt="PCW-3000" class="tootepilt img-responsive" src="pildid/pcw3000-5.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images2">
+                                <img alt="PCW-3000" class="testing" src="pildid/pcw-3k.jpg" />
+                                <img alt="PCW-3000" class="testing" src="pildid/pcw3000-2.jpg" />
+                                <img alt="PCW-3000" class="testing" src="pildid/pcw3000-3.jpg" />
+                                <img alt="PCW-3000" class="testing" src="pildid/pcw3000-4.jpg" />
+                                <img alt="PCW-3000" class="testing" src="pildid/pcw3000-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //PCW-3000 -->
+        <hr />
+        <div class="row" id="eder">
+            <div class="centerBlock">
+                <div class="pealkiri">
+                    <h2>Eder Powerwinch 1800</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image3">
+                            suur
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images3">
+                                väike
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Eder -->
+        <hr />
+        <!-- PCW-5000-hs -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="pcw5000hs">
+                    <h2>PCW-5000-HS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image4">
+                            <img alt="PCW-5000-HS" class="tootepilt img-responsive" src="pildid/pcw5000-hs.jpg" />
+                            <img alt="PCW-5000-HS" class="tootepilt img-responsive" src="pildid/pcw5000-hs2.jpg" />
+                            <img alt="PCW-5000-HS" class="tootepilt img-responsive" src="pildid/pcw5000-hs-3.jpg" />
+                            <img alt="PCW-5000-HS" class="tootepilt img-responsive" src="pildid/pcw5000-hs-4.jpg" />
+                            <img alt="PCW-5000-HS" class="tootepilt img-responsive" src="pildid/pcw5000-hs-5.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images4">
+                                <img alt="PCW-5000-HS" class="testing img-responsive" src="pildid/pcw5000-hs.jpg" />
+                                <img alt="PCW-5000-HS" class="testing img-responsive" src="pildid/pcw5000-hs2.jpg" />
+                                <img alt="PCW-5000-HS" class="testing img-responsive" src="pildid/pcw5000-hs-3.jpg" />
+                                <img alt="PCW-5000-HS" class="testing img-responsive" src="pildid/pcw5000-hs-4.jpg" />
+                                <img alt="PCW-5000-HS" class="testing img-responsive" src="pildid/pcw5000-hs-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // PCW-5000-HS -->
+        <hr />
+        <!-- PCH-1000 -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="pch1000">
+                    <h2>PCH-1000</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image5">
+                            <img alt="PCH-1000" class="tootepilt img-responsive" src="pildid/pch1000.jpg" />
+                            <img alt="PCH-1000" class="tootepilt img-responsive" src="pildid/pch1000-2.jpg" />
+                            <img alt="PCH-1000" class="tootepilt img-responsive" src="pildid/pch1000-3.jpg" />
+                            <img alt="PCH-1000" class="tootepilt img-responsive" src="pildid/pch1000-4.jpg" />
+                            <img alt="PCH-1000" class="tootepilt img-responsive" src="pildid/pch1000-5.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images5">
+                                <img alt="PCH-1000" class="testing img-responsive" src="pildid/pch1000.jpg" />
+                                <img alt="PCH-1000" class="testing img-responsive" src="pildid/pch1000-2.jpg" />
+                                <img alt="PCH-1000" class="testing img-responsive" src="pildid/pch1000-3.jpg" />
+                                <img alt="PCH-1000" class="testing img-responsive" src="pildid/pch1000-4.jpg" />
+                                <img alt="PCH-1000" class="testing img-responsive" src="pildid/pch1000-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // PCH-1000 -->
+        <hr />
+        <!-- PCT-1800-60 -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="pct1800-60">
+                    <h2>PCT-1800-60HZ-120V</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image6">
+                            <img alt="PCT-1800-60hz" class="tootepilt img-responsive" src="pildid/pct1800-60hz.jpg" />
+                            <img alt="PCT-1800-60hz" class="tootepilt img-responsive" src="pildid/pct1800-60hz-2.jpg" />
+                            <img alt="PCT-1800-60hz" class="tootepilt img-responsive" src="pildid/pct1800-60hz-3.jpg" />
+                            <img alt="PCT-1800-60hz" class="tootepilt img-responsive" src="pildid/pct1800-60hz-4.jpg" />
+                            <img alt="PCT-1800-60hz" class="tootepilt img-responsive" src="pildid/pct1800-60hz-5.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images6">
+                                <img alt="PCT-1800-60hz" class="testing" src="pildid/pct1800-60hz.jpg" />
+                                <img alt="PCT-1800-60hz" class="testing" src="pildid/pct1800-60hz-2.jpg" />
+                                <img alt="PCT-1800-60hz" class="testing" src="pildid/pct1800-60hz-3.jpg" />
+                                <img alt="PCT-1800-60hz" class="testing" src="pildid/pct1800-60hz-4.jpg" />
+                                <img alt="PCT-1800-60hz" class="testing" src="pildid/pct1800-60hz-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // PCT-1800-60 -->
+        <hr />
+        <!-- PCT-1800-50 -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="pct1800-50">
+                    <h2>PCT-1800-50HZ-230V</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image7">
+                            <img alt="PCT-1800-50hz" class="tootepilt img-responsive" src="pildid/pct1800-50hz.jpg" />
+                            <img alt="PCT-1800-50hz" class="tootepilt img-responsive" src="pildid/pct1800-50hz-2.jpg" />
+                            <img alt="PCT-1800-50hz" class="tootepilt img-responsive" src="pildid/pct1800-50hz-3.jpg" />
+                            <img alt="PCT-1800-50hz" class="tootepilt img-responsive" src="pildid/pct1800-50hz-4.jpg" />
+                            <img alt="PCT-1800-50hz" class="tootepilt img-responsive" src="pildid/pct1800-50hz-5.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images7">
+                                <img alt="PCT-1800-50hz" class="testing" src="pildid/pct1800-50hz.jpg" />
+                                <img alt="PCT-1800-50hz" class="testing" src="pildid/pct1800-50hz-2.jpg" />
+                                <img alt="PCT-1800-50hz" class="testing" src="pildid/pct1800-50hz-3.jpg" />
+                                <img alt="PCT-1800-50hz" class="testing" src="pildid/pct1800-50hz-4.jpg" />
+                                <img alt="PCT-1800-50hz" class="testing" src="pildid/pct1800-50hz-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // PCT-1800-50 -->
+        <!-- LISAD -->
+        <br />
+        <br />
+        <br />
+        <h1 class="text-center" id="trummlid">LISAD</h1>
+        <br />
+        <br />
+        <!-- // LISAD -->
+        <!-- Trummel 5k -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="85">
+                    <h2>Trummel 85mm &empty;</h2>
+                    <h4>PCA-1100</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image8">
+                            <img alt="PCA-1100" class="tootepilt img-responsive" src="pildid/pca-1100.jpg" />
+                            <img alt="PCA-1100" class="tootepilt img-responsive" src="pildid/pca-1100-2.jpg" />
+                            <img alt="PCA-1100" class="tootepilt img-responsive" src="pildid/trummlid.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images8">
+                                <img alt="PCA-1100" class="testing" src="pildid/pca-1100.jpg" />
+                                <img alt="PCA-1100" class="testing" src="pildid/pca-1100-2.jpg" />
+                                <img alt="PCA-1100" class="testing" src="pildid/trummlid.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Trummel 5k -->
+        <hr />
+        <!-- Trummel 3k -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="76">
+                    <h2>Trummel 76mm &empty;</h2>
+                    <h4>PCA-1120</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image9">
+                            <img alt="PCA-1120" class="tootepilt img-responsive" src="pildid/pca-1120.jpg" />
+                            <img alt="PCA-1120" class="tootepilt img-responsive" src="pildid/pca-1120-2.jpg" />
+                            <img alt="PCA-1120" class="tootepilt img-responsive" src="pildid/trummlid.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images9">
+                                <img alt="PCA-1120" class="testing" src="pildid/pca-1120.jpg" />
+                                <img alt="PCA-1120" class="testing" src="pildid/pca-1120-2.jpg" />
+                                <img alt="PCA-1120" class="testing" src="pildid/trummlid.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Trummel 3k -->
+        <hr />
+        <!-- Trummel standard -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="57">
+                    <h2>Trummel 57mm &empty;</h2>
+                    <h4>PCA-1110</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image10">
+                            <img alt="PCA-1110" class="tootepilt img-responsive" src="pildid/pca-1110.jpg" />
+                            <img alt="PCA-1110" class="tootepilt img-responsive" src="pildid/pca-1110-2.jpg" />
+                            <img alt="PCA-1110" class="tootepilt img-responsive" src="pildid/trummlid.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images10">
+                                <img alt="PCA-1110" class="testing" src="pildid/pca-1110.jpg" />
+                                <img alt="PCA-1110" class="testing" src="pildid/pca-1110-2.jpg" />
+                                <img alt="PCA-1110" class="testing" src="pildid/trummlid.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Trummel standard -->
+        <hr />
+        <!-- KÖIED -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="köied">
+                    <h2>Topeltpõimega polüesterköied</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image11">
+                            <img alt="Köis" class="tootepilt img-responsive" src="pildid/köis.jpg" />
+                            <img alt="Köis" class="tootepilt img-responsive" src="pildid/köis1.jpg" />
+                            <img alt="Köis" class="tootepilt img-responsive" src="pildid/köis2.jpg" />
+                            <img alt="Köis" class="tootepilt img-responsive" src="pildid/köis3.jpg" />
+                            <img alt="Köis" class="tootepilt img-responsive" src="pildid/köis4.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images11">
+                                <img alt="Köis" class="testing" src="pildid/köis.jpg" />
+                                <img alt="Köis" class="testing" src="pildid/köis1.jpg" />
+                                <img alt="Köis" class="testing" src="pildid/köis2.jpg" />
+                                <img alt="Köis" class="testing" src="pildid/köis3.jpg" />
+                                <img alt="Köis" class="testing" src="pildid/köis4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            <strong>Saadaval ka:</strong>
+                            <br />
+                            <br /> - 10mm x 50m <span class="modi">(PCA-1205M)</span>
+                            <br /> - 10mm x 100m <span class="modi">(PCA-1203M)</span>
+                            <br /> - 10mm x 100m, pleisitud silmuse ja kousiga <span class="modi">(PCA-1203M2ESC)</span>
+                            <br /> - 10mm x 200m <span class="modi">(PCA-1206M)</span>
+                            <br />
+                            <br /> - 12mm x 50m <span class="modi">(PCA-1215M)</span>
+                            <br /> - 12mm x 100m <span class="modi">(PCA-1213M)</span>
+                            <br /> - 12mm x 100m, pleisitud silmuse ja kousiga <span class="modi">(PCA-1213M2ESC)</span>
+                            <br /> - 12mm x 150m <span class="modi">(PCA-1214M)</span>
+                            <br /> - 12mm x 200m <span class="modi">(PCA-1216M)</span>
+                            <br /> - 12mm x 200m, pleisitud silmuse ja kousiga <span class="modi">(PCA-1216M2ESC)</span>
+                            <br /> - 12mm x 300m <span class="modi">(PCA-1218M)</span>
+                            <br /> - 12mm x 300m, pleisitud silmuse ja kousiga <span class="modi">(PCA-1218M2ESC)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // KÖIED -->
+        <hr />
+        <!-- KÖIEKOTID -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="kotid">
+                    <h2>Köiekotid</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image12">
+                            <img alt="Köiekotid" class="tootepilt img-responsive" src="pildid/pca-0103.jpg" />
+                            <img alt="Köiekotid" class="tootepilt img-responsive" src="pildid/pca-1255.jpg" />
+                            <img alt="Köiekotid" class="tootepilt img-responsive" src="pildid/pca-1256.jpg" />
+                            <img alt="Köiekotid" class="tootepilt img-responsive" src="pildid/pca-1257.jpg" />
+                            <img alt="Köiekotid" class="tootepilt img-responsive" src="pildid/pca-1257xl.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images12">
+                                <img alt="Köiekotid" class="testing" src="pildid/pca-0103.jpg" />
+                                <img alt="Köiekotid" class="testing" src="pildid/pca-1255.jpg" />
+                                <img alt="Köiekotid" class="testing" src="pildid/pca-1256.jpg" />
+                                <img alt="Köiekotid" class="testing" src="pildid/pca-1257.jpg" />
+                                <img alt="Köiekotid" class="testing" src="pildid/pca-1257xl.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            <strong>Köiekott rakmetele:</strong> mahutab 50m 10mm köit, kinnitamiseks PCA-0104 rakmete külge.
+                            <br />
+                            <br />
+                            <strong>Väike köiekott:</strong> mahutab 100m 10mm köit või 50m 12mm köit.
+                            <br />
+                            <br /> <strong>Keskmine köiekott (õlarihmadega):</strong> mahutab 200m 10mm köit või 100m 12mm köit.
+                            <br />
+                            <br /><strong>Suur köiekott:</strong> mahutab 150m 12mm köit.
+                            <br />
+                            <br /><strong>Ekstra suur köiekott:</strong> mahutab 200m 12mm köit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // KÖIEKOTID -->
+        <!-- VINTSI KINNITUSED -->
+        <br />
+        <br />
+        <br />
+        <h1 class="text-center text-uppercase" id="vintsikinnitused">Vintsi kinnitused</h1>
+        <br />
+        <br />
+        <!-- // VINTSIKINNITUSED -->
+        <!-- Kinnitusrihmad -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="kinnitusrihmad">
+                    <h2>Polüester kinnitusrihmad</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image13">
+                            <img alt="Kinnitusrihmad" class="tootepilt img-responsive" src="pildid/pca-1260.jpg" />
+                            <img alt="Kinnitusrihmad" class="tootepilt img-responsive" src="pildid/pca-1258x2.jpg" />
+                            <img alt="Kinnitusrihmad" class="tootepilt img-responsive" src="pildid/rihmad.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images13">
+                                <img alt="Kinnitusrihmad" class="testing" src="pildid/pca-1260.jpg" />
+                                <img alt="Kinnitusrihmad" class="testing" src="pildid/pca-1258x2.jpg" />
+                                <img alt="Kinnitusrihmad" class="testing" src="pildid/rihmad.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Vintsi või ploki kinnitamiseks puu külge. ilma puukoort kahjustamata. Tõmmatava objekti fikseerimiseks. Ohutu töökoormus 2903 kg vintsi ankurdamisel lingukujuliselt ümber puu või posti. 2182 kg silmusekujulisel kinnitamisel (nt. Ploki kinnitamisel)
+                            <br/>
+                            <br />
+                            <strong>60mm x 2m</strong> <span class="modi">(PCA-1260)</span>
+                            <br />
+                            <br />
+                            <strong>60mm x 2,5m</strong> <span class="modi">(PCA-1259)</span>
+                            <br />
+                            <br />
+                            <strong>60mm x 3m</strong> <span class="modi">(PCA-1258)</span>
+                            <br />
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Kinnitusrihmad -->
+        <hr />
+        <!-- Kinnitusplaat Haakekonksule -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="haakekonks">
+                    <h2>Kinnitusplaat haakekonksule</h2>
+                    <h4>PCA-1261</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image14">
+                            <img alt="PCA-1261" class="tootepilt img-responsive" src="pildid/pca-1261.jpg" />
+                            <img alt="PCA-1261" class="tootepilt img-responsive" src="pildid/pca-1261-2.jpg" />
+                            <img alt="PCA-1261" class="tootepilt img-responsive" src="pildid/pca-1261-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images14">
+                                <img alt="PCA-1261" class="testing" src="pildid/pca-1261.jpg" />
+                                <img alt="PCA-1261" class="testing" src="pildid/pca-1261-2.jpg" />
+                                <img alt="PCA-1261" class="testing" src="pildid/pca-1261-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Vintsi kinnitusplaat auto haakekonksule (läbimõõduga kuni 50 mm)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Kinnitusplaat Haakekonksule -->
+        <hr />
+        <!-- Kinnitusplaat puudele -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="plaatpuudele">
+                    <h2>Kinnitusplaat puudele / postidele</h2>
+                    <h4>PCA-1263</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image15">
+                            <img alt="PCA-1263" class="tootepilt img-responsive" src="pildid/pca-1263.jpg" />
+                            <img alt="PCA-1263" class="tootepilt img-responsive" src="pildid/pca-1263-2.jpg" />
+                            <img alt="PCA-1263" class="tootepilt img-responsive" src="pildid/pca-1263-3.jpg" />
+                            <img alt="PCA-1263" class="tootepilt img-responsive" src="pildid/pca-1263-4.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images15">
+                                <img alt="PCA-1263" class="testing" src="pildid/pca-1263.jpg" />
+                                <img alt="PCA-1263" class="testing" src="pildid/pca-1263-2.jpg" />
+                                <img alt="PCA-1263" class="testing" src="pildid/pca-1263-3.jpg" />
+                                <img alt="PCA-1263" class="testing" src="pildid/pca-1263-4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            See kinnitusplaat muudab vintsimise lihtsamaks eriti juhtudel, kui töötate pikema perioodi vältel samas kohas.
+                            <br /> Komplekti kuulub ka kinnitusrihm.
+                            <br /> Kasutamiseks vajalik PCA-1264 või PCA-1268 olemasolu
+                            <br />
+                            <br />Puu/posti min. Läbimõõt 30 cm
+                            <br />Puu/posti maks läbimõõt 91 cm.
+                            <br />
+                            <br />Kaal: 7.5 kg
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Kinnitusplaat puudele -->
+        <hr />
+        <!-- Vertikaalse tõmbe tugi -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="vertikaalnetugi">
+                    <h2>Vertikaalse tõmbe tugi</h2>
+                    <h4>PCA-1264</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image16">
+                            <img alt="PCA-1264" class="tootepilt img-responsive" src="pildid/pca-1264.jpg" />
+                            <img alt="PCA-1264" class="tootepilt img-responsive" src="pildid/pca-1264-2.jpg" />
+                            <img alt="PCA-1264" class="tootepilt img-responsive" src="pildid/pca-1264-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images16">
+                                <img alt="PCA-1264" class="testing" src="pildid/pca-1264.jpg" />
+                                <img alt="PCA-1264" class="testing" src="pildid/pca-1264-2.jpg" />
+                                <img alt="PCA-1264" class="testing" src="pildid/pca-1264-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            See kinnitus võimaldab teil kasutada vintsi vertikaalseks tõmbamiseks. Kinnitamiseka vajate puu/posti kinnitust PCA-1263. Sobib hästi elektrikaablite paigaldamiseks
+                            <br />
+                            <br /> Kaal: 8.2 kg
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Vertikaalse tõmbe tugi -->
+        <hr />
+        <!-- Haakekonksu kinnitussüsteem -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="haakekonksukinnitus">
+                    <h2>Haakekonksu kinnitussüsteem</h2>
+                    <h4>PCA-1266</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image17">
+                            <img alt="PCA-1266" class="tootepilt img-responsive" src="pildid/pca-1266.jpg" />
+                            <img alt="PCA-1266" class="tootepilt img-responsive" src="pildid/pca-1266-2.jpg" />
+                            <img alt="PCA-1266" class="tootepilt img-responsive" src="pildid/pca-1266-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images17">
+                                <img alt="PCA-1266" class="testing" src="pildid/pca-1266.jpg" />
+                                <img alt="PCA-1266" class="testing" src="pildid/pca-1266-2.jpg" />
+                                <img alt="PCA-1266" class="testing" src="pildid/pca-1266-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Haakekonksu kinnitussüsteem kuni 50 mm haakekonksule. Kasutamiseks koos PCA-1265, PCA-1264 või PCA-1268.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Haakekonksu kinnitussüsteem -->
+        <hr />
+        <!-- 1266 Adapter -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="pca1266adapter">
+                    <h2>PCA-1266 Adapter</h2>
+                    <h4>PCA-1265</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image18">
+                            <img alt="PCA-1265" class="tootepilt img-responsive" src="pildid/pca-1265.jpg" />
+                            <img alt="PCA-1265" class="tootepilt img-responsive" src="pildid/pca-1265-2.jpg" />
+                            <img alt="PCA-1265" class="tootepilt img-responsive" src="pildid/pca-1265-2-2.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images18">
+                                <img alt="PCA-1265" class="testing" src="pildid/pca-1265.jpg" />
+                                <img alt="PCA-1265" class="testing" src="pildid/pca-1265-2.jpg" />
+                                <img alt="PCA-1265" class="testing" src="pildid/pca-1265-2-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // 1266 Adapter -->
+        <hr />
+        <!-- Tugiplaadi kinnitus nelikant haakekonksule -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="tugiplaadikinnitus">
+                    <h2>Tugiplaadi kinnitus</h2>
+                    <h4>PCA-1267</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image19">
+                            <img alt="PCA-1267" class="tootepilt img-responsive" src="pildid/pca-1267.jpg" />
+                            <img alt="PCA-1267" class="tootepilt img-responsive" src="pildid/pca-1267-2.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images19">
+                                <img alt="PCA-1267" class="testing" src="pildid/pca-1267.jpg" />
+                                <img alt="PCA-1267" class="testing" src="pildid/pca-1267-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Vintsi tugiplaadi PCA-1268 kinnitus auto eemaldatava 50 mm nelikant haakekonksu ava tarvis
+                            <br />
+                            <br /> Kaal: 8.2 kg
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Tugiplaadi kinnitus nelikant haakekonksule -->
+        <hr />
+        <!-- Vintsi tugiplaat -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="tugiplaat">
+                    <h2>Vintsi tugiplaat</h2>
+                    <h4>PCA-1268</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image20">
+                            <img alt="PCA1268" class="tootepilt img-responsive" src="pildid/pca-1268.jpg" />
+                            <img alt="PCA1268" class="tootepilt img-responsive" src="pildid/pca-1268-2.jpg" />
+                            <img alt="PCA1268" class="tootepilt img-responsive" src="pildid/pca-1268-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images20">
+                                <img alt="PCA1268" class="testing" src="pildid/pca-1268.jpg" />
+                                <img alt="PCA1268" class="testing" src="pildid/pca-1268-2.jpg" />
+                                <img alt="PCA1268" class="testing" src="pildid/pca-1268-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Vintsi tugiplaat -->
+        <hr />
+        <!-- kinnitus puudle / postidele -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="kinnituspuudele">
+                    <h2>Vintsi kinnitus puudele / postidele</h2>
+                    <h4>PCA-1269</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image21">
+                            <img alt="PCA-1269" class="tootepilt img-responsive" src="pildid/pca-1269.jpg" />
+                            <img alt="PCA-1269" class="tootepilt img-responsive" src="pildid/pca-1269-2.jpg" />
+                            <img alt="PCA-1269" class="tootepilt img-responsive" src="pildid/pca-1269-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images21">
+                                <img alt="PCA-1269" class="testing" src="pildid/pca-1269.jpg" />
+                                <img alt="PCA-1269" class="testing" src="pildid/pca-1269-2.jpg" />
+                                <img alt="PCA-1269" class="testing" src="pildid/pca-1269-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Puu/posti kinnitusplaat koos 50 mm laiuse ja 3m pikkuse kinnitusrihmaga
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // kinnitus puudle / postidele -->
+        <!-- PLOKID -->
+        <br />
+        <br />
+        <br />
+        <h1 class="text-center" id="plokid">PLOKID</h1>
+        <br />
+        <br />
+        <!-- Tagasijooksulukustiga monoplokk -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="tagasimono">
+                    <h2>Tagasijooksulukustiga monoplokk</h2>
+                    <h4>PCA-1271</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image22">
+                            <img alt="PCA-1271" class="tootepilt img-responsive" src="pildid/pca-1271.jpg" />
+                            <img alt="PCA-1271" class="tootepilt img-responsive" src="pildid/pca-1271-2.jpg" />
+                            <img alt="PCA-1271" class="tootepilt img-responsive" src="pildid/pca-1271-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images22">
+                                <img alt="PCA-1271" class="testing" src="pildid/pca-1271.jpg" />
+                                <img alt="PCA-1271" class="testing" src="pildid/pca-1271-2.jpg" />
+                                <img alt="PCA-1271" class="testing" src="pildid/pca-1271-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            See iselukustuv plokk on välja töötatud spetsiaalselt päästeteenistuse tarbeks. Plokil on pidurdussüsteem, mis võimaldab laseb köiel joosta vaid ühes suunas. Lukustit on võimalik ka vabastada.
+                            <br />
+                            <br /> Valmistatud anodeeritud alumiiniumist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Tagasijooksulukustiga monoplokk -->
+        <hr />
+        <!-- Tagasijooksulukustiga topeltplokk -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="tagasitopelt">
+                    <h2>Tagasijooksulukustiga topeltplokk</h2>
+                    <h4>PCA-1272</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image23">
+                            <img alt="PCA-1272" class="tootepilt img-responsive" src="pildid/pca-1272.jpg" />
+                            <img alt="PCA-1272" class="tootepilt img-responsive" src="pildid/pca-1272-2.jpg" />
+                            <img alt="PCA-1272" class="tootepilt img-responsive" src="pildid/pca-1272-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images23">
+                                <img alt="PCA-1272" class="testing" src="pildid/pca-1272.jpg" />
+                                <img alt="PCA-1272" class="testing" src="pildid/pca-1272-2.jpg" />
+                                <img alt="PCA-1272" class="testing" src="pildid/pca-1272-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lukustiga topeltplokk juhtudeks, kui vajate kuni neljakordset tõmbejõudu
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Tagasijooksulukustiga topeltplokk -->
+        <hr />
+        <!-- Alumiiniumist monoplokk -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="alumiiniumistmono">
+                    <h2>Alumiiniumist monoplokk</h2>
+                    <h4>PCA-1292</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image24">
+                            <img alt="PCA-1292" class="tootepilt img-responsive" src="pildid/pca-1292.jpg" />
+                            <img alt="PCA-1292" class="tootepilt img-responsive" src="pildid/pca-1292-2.jpg" />
+                            <img alt="PCA-1292" class="tootepilt img-responsive" src="pildid/pca-1292-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images24">
+                                <img alt="PCA-1292" class="testing" src="pildid/pca-1292.jpg" />
+                                <img alt="PCA-1292" class="testing" src="pildid/pca-1292-2.jpg" />
+                                <img alt="PCA-1292" class="testing" src="pildid/pca-1292-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Alumiiniumist monoplokk
+                            <br /> 63 mm diam
+                            <br /> plokiratas
+                            <br /> Maks koormus 5095 kg </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Alumiiniumist monoplokk -->
+        <hr />
+        <!-- Topeltplokk -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="topelt100">
+                    <h2>Topeltplokk 100mm</h2>
+                    <h4>PCA-1273</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image25">
+                            <img alt="PCA-1273" class="tootepilt img-responsive" src="pildid/pca-1273.jpg" />
+                            <img alt="PCA-1273" class="tootepilt img-responsive" src="pildid/pca-1273-2.jpg" />
+                            <img alt="PCA-1273" class="tootepilt img-responsive" src="pildid/pca-1273-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images25">
+                                <img alt="PCA-1273" class="testing" src="pildid/pca-1273.jpg" />
+                                <img alt="PCA-1273" class="testing" src="pildid/pca-1273-2.jpg" />
+                                <img alt="PCA-1273" class="testing" src="pildid/pca-1273-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Külgplaadid roostevabast terasest. Kaks 100mm alumiiniumist plokiratast pronkspuksidel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Topeltplokk -->
+        <hr />
+        <!-- Monoplokk -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="mono100">
+                    <h2>Monoplokk 100mm</h2>
+                    <h4>PCA-1274</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image26">
+                            <img alt="PCA-1274" class="tootepilt img-responsive" src="pildid/pca-1274.jpg" />
+                            <img alt="PCA-1274" class="tootepilt img-responsive" src="pildid/pca-1274-2.jpg" />
+                            <img alt="PCA-1274" class="tootepilt img-responsive" src="pildid/pca-1274-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images26">
+                                <img alt="PCA-1274" class="testing" src="pildid/pca-1274.jpg" />
+                                <img alt="PCA-1274" class="testing" src="pildid/pca-1274-2.jpg" />
+                                <img alt="PCA-1274" class="testing" src="pildid/pca-1274-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Külgplaadid roostevabast terasest. 100mm alumiiniumist pronkspuksidel plokiratas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Monoplokk -->
+        <hr />
+        <!-- Monoplokk 76mm -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="mono76">
+                    <h2>Monoplokk 76mm</h2>
+                    <h4>PCA-1275</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image27">
+                            <img alt="PCA-1275" class="tootepilt img-responsive" src="pildid/pca-1275.jpg" />
+                            <img alt="PCA-1275" class="tootepilt img-responsive" src="pildid/pca-1275-2.jpg" />
+                            <img alt="PCA-1275" class="tootepilt img-responsive" src="pildid/pca-1275-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images27">
+                                <img alt="PCA-1275" class="testing" src="pildid/pca-1275.jpg" />
+                                <img alt="PCA-1275" class="testing" src="pildid/pca-1275-2.jpg" />
+                                <img alt="PCA-1275" class="testing" src="pildid/pca-1275-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Külgplaadid roostevabast terasest. 76mm alumiiniumist pronkspuksidel plokiratas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Monoplokk 76mm -->
+        <hr />
+        <!-- Avatud nurgaplokk -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="nurgaplokk">
+                    <h2>Avatud nurgaplokk</h2>
+                    <h4>PCA-1270</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image28">
+                            <img alt="PCA-1270" class="tootepilt img-responsive" src="pildid/pca-1270.jpg" />
+                            <img alt="PCA-1270" class="tootepilt img-responsive" src="pildid/pca-1270-2.jpg" />
+                            <img alt="PCA-1270" class="tootepilt img-responsive" src="pildid/pca-1270-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images28">
+                                <img alt="PCA-1270" class="testing" src="pildid/pca-1270.jpg" />
+                                <img alt="PCA-1270" class="testing" src="pildid/pca-1270-2.jpg" />
+                                <img alt="PCA-1270" class="testing" src="pildid/pca-1270-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Kasutamiseks hülsiga PCA-1291
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Avatud nurgaplokk -->
+        <hr />
+        <!-- Hülss PCA-1291 -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="hülss">
+                    <h2>Hülss PCA-1291</h2>
+                    <h4>PCA-1291</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image29">
+                            <img alt="PCA-1291" class="tootepilt img-responsive" src="pildid/pca-1291.jpg" />
+                            <img alt="PCA-1291" class="tootepilt img-responsive" src="pildid/pca-1291-2.jpg" />
+                            <img alt="PCA-1291" class="tootepilt img-responsive" src="pildid/pca-1291-3.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images29">
+                                <img alt="PCA-1291" class="testing" src="pildid/pca-1291.jpg" />
+                                <img alt="PCA-1291" class="testing" src="pildid/pca-1291-2.jpg" />
+                                <img alt="PCA-1291" class="testing" src="pildid/pca-1291-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Hülss köie automaatseks vabastamiseks avatud nurgaplokilt PCA-1270
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Hülss PCA-1291 -->
+        <!-- Karabiinid  -->
+        <br />
+        <br />
+        <br />
+        <h1 class="text-center" id="karabiinid">KARABIINID</h1>
+        <br />
+        <br />
+        <!-- Karabiin 2550kg -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="2550">
+                    <h2>Ovaalne teraskarabiin 2550kg</h2>
+                    <h4>PCA-1276</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <img alt="PCA-1276" class="tootepilt img-responsive" src="pildid/pca-1276.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Ovaalne teraskarabiin tõmbetugevusele 2550 kg
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Karabiin 2550kg -->
+        <hr />
+        <!-- Karabiin 5095kg -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="5095">
+                    <h2>Ovaalne teraskarabiin 5095kg</h2>
+                    <h4>PCA-1702</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <img alt="PCA-1702" class="tootepilt img-responsive" src="pildid/pca-1702.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Ovaalne teraskarabiin tõmbetugevusele 5095 kg
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Karabiin 5095kg -->
+        <hr />
+        <!-- Karabiin 7135kg -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="7135">
+                    <h2>Ovaalne teraskarabiin 7135kg</h2>
+                    <h4>PCA-1701</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <img alt="PCA-1701" class="tootepilt img-responsive" src="pildid/pca-1701.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Ovaalne teraskarabiin tõmbetugevusele 7135 kg
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // Karabiin 7135kg -->
+        <!-- //KARABIINID -->
+        <!-- KONKSUD -->
+        <br />
+        <br />
+        <br />
+        <h1 class="text-center" id="konksud">KONKSUD</h1>
+        <br />
+        <br />
+        <!-- Lukustiga konks +3 lüli -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="lukustiga3">
+                    <h2>Lukustiga konks + 3 lüli</h2>
+                    <h4>PCA-1282</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image30">
+                            <img alt="PCA-1282" class="tootepilt img-responsive" src="pildid/pca-1282.jpg" />
+                            <img alt="PCA-1282" class="tootepilt img-responsive" src="pildid/pca-1282-2.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images30">
+                                <img alt="PCA-1282" class="testing" src="pildid/pca-1282.jpg" />
+                                <img alt="PCA-1282" class="testing" src="pildid/pca-1282-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lukustiga konks + 3 lüli (7mm ketile)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //Lukustiga konks +3 lüli -->
+        <hr />
+        <!-- Lukustiga konks -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="lukustiga">
+                    <h2>Lukustiga konks</h2>
+                    <h4>PCA-1281</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image31">
+                            <img alt="PCA-1281" class="tootepilt img-responsive" src="pildid/pca-1281.jpg" />
+                            <img alt="PCA-1281" class="tootepilt img-responsive" src="pildid/pca1281-2.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images31">
+                                <img alt="PCA-1281" class="testing" src="pildid/pca-1281.jpg" />
+                                <img alt="PCA-1281" class="testing" src="pildid/pca1281-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            Lukustiga konks. Maks 750 kg.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //Lukustiga konks -->
+        <hr />
+        <!-- C-Konks -->
+        <div class="row">
+            <div class="centerBlock">
+                <div class="pealkiri" id="ckonks">
+                    <h2>C-Konks</h2>
+                    <h4>PCA-1299</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="big-image32">
+                            <img alt="PCA-1299" class="tootepilt img-responsive" src="pildid/pca-1299.jpg" />
+                            <img alt="PCA-1299" class="tootepilt img-responsive" src="pildid/pca-1299-2.jpg" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 nh">
+                            <div class="small-images32">
+                                <img alt="PCA-1299" class="testing" src="pildid/pca-1299.jpg" />
+                                <img alt="PCA-1299" class="testing" src="pildid/pca-1299-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <p class="tooteinfo">
+                            C-konks. 6-7 mm ketile
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //C-Konks -->
+        <hr />
+    </div>
+
+
+
+    <div class="container-fluid jalus">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center">
+                    Copyright &copy; 2016 Portable Winch Co
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $('body').scrollspy({
+            'target': '#nav',
+            'offset': 10
+        });
+        $('#nav').on('activate.bs.scrollspy', function() {
+            var ele = $(this).find('.active');
+            if (ele.find('.submenu').length > 0) {
+                $('.submenu li').addClass('hide');
+                $('.active>ul.submenu>li').removeClass('hide');
+            } else {
+                $('.submenu li').addClass('hide');
+            }
+        });
+    </script>
+</body>
+
+</html>

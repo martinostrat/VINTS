@@ -1,0 +1,59 @@
+.small-images {
+  flex-direction: row;
+  float: left;
+  margin-left: 20px;
+}
+
+.tooteinfo {
+  margin-left: 35px;
+}
+
+#order1 {
+  order: 1;
+}
+
+#oreder2 {
+  order: 2;
+}
+
+#order3 {
+  order: 3;
+}
+
+.tootekirjeldus {
+  margin: 0;
+  padding: 0;
+}
+
+.tooteinfo {
+  margin: 0;
+  padding: 15px;
+  max-width: 72%;
+}
+
+#pro {
+  order: 2;
+}
+
+#proo {
+  order: 1;
+}
+
+.nh {
+  padding: 5px;
+  justify-content: center;
+}
+
+.center {
+  margin: 0 auto;
+  float:none;
+}
+
+.big-image {
+  margin: 25px;
+}
+
+.centerBlock {
+  display: table;
+  margin: 0 auto;
+}
