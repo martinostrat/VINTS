@@ -364,15 +364,6 @@ object {
 }
 
 @media (max-width: 991px) {
-
-  html {
-    overflow-x: hidden;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
   hr {
     margin: auto;
   }
