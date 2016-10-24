@@ -294,7 +294,6 @@ p {
   font-size: 28px;
 }
 
-
 .eder {
   background: white;
 }
@@ -306,6 +305,10 @@ p {
 
 .h4kood {
   margin-left: 10px;
+}
+
+#jumbotext {
+  padding: 0;
 }
 
 /* ********************************** MUU ********************************** */
