@@ -456,13 +456,6 @@ iframe {
   padding-bottom: 15px;
 }
 
-
-.rowgal {
-  display: flex;
-  flex-direction: row;
-}
-
-
 /* **************** TEHNILINE INFO **************** */
 
 
@@ -588,4 +581,32 @@ iframe {
   text-align: justify;
 }
 
-test
+/* **************** GALERII **************** */
+
+.gallery {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 892px) {
+  .col-6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .gallery {
+    width: 100%;
+    margin: auto;
+  }
+
+  img.thumbnail {
+    margin: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
