@@ -8,58 +8,121 @@
 
     <link href="bootstrap/css/vints.css" rel="stylesheet" />
     <link href="stylesheet.css" rel="stylesheet" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="bootstrap/js/jquery-3.1.0.js"></script>
+    <script src="bootstrap/js/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img id="nav-logo" alt="Portable Winch" src="pildid/PW-White.png" />
-                </a>
-            </div>
-            <ul class="nav navbar-nav navbar-right" id="navi-ul">
-                <li role="presentation" id="navi-li">
-                    <a href="vints.html">Pealeht</a>
-                </li>
-                <li role="presentation">
-                    <a href="tooted.html">Tooted</a>
-                </li>
-                <li role="presentation">
-                    <a href="#">Hinnad</a>
-                </li>
-                <li role="presentation">
-                    <a href="#">Galerii</a>
-                </li>
-                <li role="presentation" class="active">
-                    <a href="kontakt.html">Kontakt</a>
-                </li>
-                <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lisainfo <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li role="presentation">
-                            <a href="#">Tehniline Info</a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li role="presentation">
-                            <a href="#">Kasutusjuhendid</a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li role="presentation">
-                            <a href="#">Vintsi Eelised</a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li role="presentation">
-                            <a href="#">Nõuanded</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="vints.html">
+                  <img class="hidden-xs" id="suurlogo" alt="Portable Winch" src="pildid/PW-White.png" />
+                  <img class="visible-xs" id="vaikelogo" alt="Portable Winch" src="pildid/PW-White.png" />
+              </a>
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse navHeaderCollapse">
+              <ul class="nav navbar-nav navbar-right" id="navi-ul">
+                  <li role="presentation" id="navi-li">
+                      <a href="vints.html">Pealeht</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="tooteduus.html">Tooted</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="hinnad.html">Hinnad</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="galerii.html">Galerii</a>
+                  </li>
+                  <li role="presentation" class="active">
+                      <a href="kontakt.html">Kontakt</a>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lisainfo <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li role="presentation">
+                              <a href="tehnilineinfo.html">Tehniline Info</a>
+                          </li>
+                          <li role="separator" class="divider"></li>
+                          <li role="presentation">
+                              <a href="kasutusjuh.html">Kasutusjuhendid</a>
+                          </li>
+                          <li role="separator" class="divider"></li>
+                          <li role="presentation">
+                              <a href="eelised.html">Vintsi Eelised</a>
+                          </li>
+                          <li role="separator" class="divider"></li>
+                          <li role="presentation">
+                              <a href="nouanded.html">Nõuanded</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 
-    <script src="bootstrap/js/jquery-3.1.0.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <div class="kontaktwrap">
+    <div id="contact_form" class="row">
+      <div class="col-12 col-sm-12 col-lg-12">
+
+        <form id="feedbackForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nimi">
+            <span class="help-block" style="display: none;">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-maili aadress">
+            <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+          </div>
+          <div class="form-group">
+            <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Sisu"></textarea>
+            <span class="help-block" style="display: none;">Please enter a message.</span>
+          </div>
+          <img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+          <a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Vaheta pilti</a><br/>
+          <div class="form-group" style="margin-top: 10px;">
+            <input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="Sisesta pildidl olevad sümbolid" />
+            <span class="help-block" style="display: none;">Please enter the code displayed within the image.</span>
+          </div>
+
+          <span class="help-block" style="display: none;">Please enter a the security code.</span>
+          <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style="display: block; margin-top: 10px;">Saada</button>
+        </form>
+      </div><!--/span-->
+    </div><!--/row-->
+</div>
+
+<div class="kontaktmuu">
+  <p>
+    Kui mingil põhjusel kontaktivormi kaudu kirja saatmine ebaõnnestus saate alati võtta ühendust all oleva informatsiooni teel.
+    <br>
+    <br>
+    Telefon:          +372 53 330 641  või  +372 50 83 731
+
+    <br>
+    <br>
+    E-mail:            info@vints.ee
+  </p>
+</div>
+
+<div class="container-fluid jalus kontaktjalus">
+    <div class="row ">
+        <div class="col-sm-12 ">
+            <p class="text-center ">
+                Copyright &copy; 2016 Portable Winch Co
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

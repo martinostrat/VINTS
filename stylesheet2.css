@@ -614,26 +614,8 @@ iframe {
 }
 
 @media (max-width: 650px) {
-  img.thumbnail {
+  img {
     height: 150px;
     width: 150px;
   }
-}
-
-
-.kontaktwrap {
-  width: 45%;
-  margin: auto;
-}
-
-.kontaktmuu > p {
-  padding-top: 40px;
-  width: 45%;
-  margin: auto;
-}
-
-.kontaktjalus {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
