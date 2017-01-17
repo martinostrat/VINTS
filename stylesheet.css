@@ -164,6 +164,7 @@ hr {
   background-size: cover;
   height: 300px;
   opacity: 1;
+  margin-bottom: 80px;
 }
 
 .jumbotron h2 {
