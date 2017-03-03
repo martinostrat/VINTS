@@ -185,12 +185,6 @@ hr {
 
 
 /* ********************************** PILDID ********************************** */
-.pildid {
-  border-radius: 5px;
-  border-style: groove;
-  border-color: black;
-  border-width: medium;
-}
 
 #ederpic {
   width: 316px;
@@ -254,8 +248,8 @@ margin-top: 0;
 
 /* ********************************** TEKST ********************************** */
 
-p {
-  text-align: justify;
+.kirjeldus {
+  text-align: center;
 }
 
 .pealkiri {
@@ -269,9 +263,10 @@ p {
 }
 
 .jalus {
-  background-color: black;
-  margin-top: 100px;
+  border-top:  5px solid #385e96;
+  background-color: #304a63;
   bottom: 1px;
+  width: 100%;
 }
 
 #jalus {
@@ -286,13 +281,10 @@ p {
   padding: 5px;
 }
 
-.kirjeldus {
-  width: 316px;
-  margin-top: 10px;
-}
-
 .vintsname {
   font-size: 28px;
+  text-align: center;
+  margin: 10px 0px 0px;
 }
 
 .eder {
@@ -396,7 +388,9 @@ object {
     margin-bottom: 30px;
     padding-top: 20px;
     max-width: 80%;
-    text-align: justify;
+    text-align: center !important;
+    width: 316px;
+    margin-top: 10px;
   }
 
   .tooteinfo {
@@ -409,8 +403,7 @@ object {
   }
 
   .vintsname {
-    width: 400px;
-    margin: auto;
+    text-align: center;
     padding-top: 10px;
   }
 
