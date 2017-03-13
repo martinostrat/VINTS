@@ -248,5 +248,5 @@ padding: 0;
 .spec_wrap {
   display: flex;
   justify-content: space-around;
-
+  margin-bottom: 15px;
 }
