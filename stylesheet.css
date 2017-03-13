@@ -193,36 +193,38 @@ hr {
 }
 
 .tootepilt {
-  border-radius: 25px;
   border: 1px solid black;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
   background: white;
-  width: 310px;
-  height: 310px;
   margin-left: 20px;
+}
+
+.img-responsive {
+  height: auto !important;
 }
 
 .testing {
   float: left;
-  width: 50px;
-  height: 50px;
+  height: 65px !important;
   margin-right: 10px;
   margin-bottom: 40px;
   border-radius: 5px;
   border: 1px solid black;
 }
 
-@media (min-width: 1200px) {
-  img.testing:nth-child(1) {
-    margin-left: 13px;
+
+
+@media (max-width: 1199px) {
+  img.testing {
+    margin-top: 10px !important;
   }
 }
 
-@media (max-width: 1199px) {
-  img.testing:nth-child(1) {
-    margin-left: 9px;
+@media (max-width: 691px) {
+  img.testing {
+
   }
 }
 

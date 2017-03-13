@@ -1,11 +1,13 @@
-body {
-  background-color: #fff;
-  height: 100%;
+html, body {
+  background-color: #e2e2e2 !important;
 }
 
-html {
-
+.container-fluid {
+  max-width: 96%;
+  background: #e2e2e2;
 }
+
+                  /*              NAVIGATION              */
 
 .navbar {
   background-color: #304a63;
@@ -94,189 +96,6 @@ background-color: #75a4ab !important;
 padding: 0;
 }
 
-
-/* JUMBOTRON */
-
-.jumbotron {
-  z-index: 2;
-  position: absolute;
-  top: 78px;
-  left: 0px;
-  right: 0px;
-  height: 550px;
-  padding-top: 138px;
-  box-shadow: 0px 7px 25px 0px black;
-}
-
-.product_popular {
-  margin-top: 680px;
-  width: 99%;
-}
-
-.border-wrap {
-  border: 1px solid black;
-  background-color: #FFF;
-}
-
-.row_one {
-  padding-bottom: 50px;
-  margin-top: -105px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.row_two {
-  padding-bottom: 50px;
-}
-
-.bg2 {
-  background-color: #505f6d;
-  width: 92%;
-  height: 100%;
-}
-
-.product_text {
-  margin: auto;
-  margin-top: 30px;
-  text-align: center;
-  max-width: 90%;
-  padding-bottom: 25px;
-}
-
-.product_spec {
-  border: 1px solid black;
-  padding: 5px;
-  text-align: center;
-  height: 92px;
-  width: 95px;
-}
-
-.spec_icon {
-  font-size: 22px;
-  padding: 5px 0px 5px;
-}
-
-.spec_name {
-  font-size: 14px;
-}
-
-.spec_col {
-  display: inline-block;
-  padding: 0px;
-}
-
-.product_section {
-  min-width: 393.7px;
-  max-width: 413.19px;
-  margin: auto;
-  margin-bottom: 25px;
-}
-
-.img-responsive {
-  margin: auto;
-  height: 310px;
-}
-
-/* Toode */
-
-.container_product {
-  margin: auto;
-}
-
-#body_product {
-  height: 82vh;
-  min-height: 100%;
-  width: 70%;
-}
-
-@media (min-width: 900px) {
-  .t1 {
-    margin: auto;
-  }
-
-  .container_product {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-}
-
-@media (max-width: 900px) {
-  .wrap_product {
-    margin-top: -15px;
-  }
-
-  .t2 {
-
-  }
-
-
-
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-  .wrap_product {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 1092px) {
-  .container {
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-}
-
-@media (max-width: 767px) {
-  .t1 > h2 {
-    text-align: center;
-  }
-}
-
-.wrap_product {
-  min-width: 400px;
-  padding-bottom: 30px;
-}
-
-.product_footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: -30px;
-  clear: both;
-}
-
-.t1 {
-
-  flex: 1.5;
-  padding-left: 40px;
-
-}
-
-.t2 {
-  display: flex;
-  flex: 1;
-
-}
-
-.testing {
-  height: 50px !important;
-}
-
-#big-image {
-  margin: auto;
-  margin-top: 20px;
-}
-
-.t1 > p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 @media (max-width: 1200px) {
     .navbar-header {
         float: none;
@@ -322,5 +141,112 @@ padding: 0;
        -webkit-box-shadow: none;
        box-shadow: none;
     }
+
+}
+
+
+                    /*          KAARDID           */
+
+
+@media screen and (min-width: 40em) {
+  .vintsid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .vints {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+/*  4  */
+@media screen and (min-width: 89.375em) {
+  .vints {
+    flex: 0 1 calc(24% - 1em);
+  }
+}
+
+/*  3  */
+@media screen and (min-width: 65.125em) and (max-width: 89.375em) {
+  .vints {
+    flex: 0 1 calc(33% - 1em);
+  }
+}
+
+/*   2   */
+@media screen and (min-width: 65.125em) and (max-width: 65.124em) {
+  .vints {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+.vints {
+  background: white;
+  margin-bottom: 2em;
+  box-shadow: 0px 0px 18px 1px black;
+}
+
+.vints a {
+  text-decoration: none;
+  color: black;
+}
+
+.vints h2 {
+  text-align: center;
+}
+
+.vints p {
+  text-align: center;
+}
+
+.vints_img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+  max-height: 341.62px;
+}
+
+.vints_content {
+  max-width: 95%;
+  margin: auto;
+}
+
+/*    jskdfjkds     */
+
+.product_text {
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  max-width: 90%;
+  padding-bottom: 25px;
+}
+
+.product_spec {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  height: 92px;
+  width: 95px;
+}
+
+.spec_icon {
+  font-size: 22px;
+  padding: 5px 0px 5px;
+}
+
+.spec_name {
+  font-size: 14px;
+}
+
+.spec_col {
+  padding-bottom: 30%;
+  height: 0;
+}
+
+.spec_wrap {
+  display: flex;
+  justify-content: space-around;
 
 }
