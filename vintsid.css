@@ -200,9 +200,7 @@ padding: 0;
   text-align: center;
 }
 
-.vints p {
-  text-align: center;
-}
+
 
 .vints_img {
   display: block;
@@ -257,7 +255,18 @@ padding: 0;
 
 /*          TÖÖRIISTAD           */
 
-.tooriistad {
+.tooriistad_p {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+  text-align: center !important;
+  margin-bottom: 25px;
+}
+
+.tooriistad_h {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tooriistad_text {
+  font-family: 'Raleway', sans-serif;
 }
