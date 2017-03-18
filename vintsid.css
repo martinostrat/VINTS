@@ -10,7 +10,7 @@ html, body {
                   /*              NAVIGATION              */
 
 .navbar {
-  background-color: #304a63;
+  background-color: #1b5f0f;
 }
 
 .navbar .navbar-nav {
@@ -29,7 +29,7 @@ text-align: center;
 
 .navbar-inverse .navbar-nav > .active > a {
 border-radius: 0;
-background-color: #5D89B1;
+background-color: #19822b;
 padding: 30px 40px 30px;
 border-left: 1px solid black;
 border-right: 1px solid black;
@@ -47,7 +47,7 @@ margin-top: -6px;
 
 .navbar-fixed-top {
 padding: 0px;
-border-bottom:  5px solid #385e96;
+border-bottom:  5px solid #68a261;
 
 }
 
@@ -68,7 +68,7 @@ padding-right: 0px;
 }
 
 .inuse {
-background-color: #75a4ab !important;
+background-color: #1caf3a !important;
 }
 
 .dropdown-menu > li > a {
