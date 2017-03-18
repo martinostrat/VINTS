@@ -253,6 +253,15 @@ padding: 0;
   margin-bottom: 15px;
 }
 
+/*          PEALEHT           */
+
+.pealeht_pop {
+  margin-bottom: 135px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+
 /*          TÖÖRIISTAD           */
 
 .tooriistad_p {
