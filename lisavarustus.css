@@ -133,3 +133,14 @@ padding: 0;
   box-shadow: none;
   }
 }
+
+
+.lisa_h {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.lisa_p {
+  margin-left: 10px; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
